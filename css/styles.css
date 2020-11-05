@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap');
+body {
+    background-color: black;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    cursor: pointer;
+    font-size: 25px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+li:hover {
+    border: 3px dotted red;
+    color: red;
+    background: rgb(0, 0, 0);
+}
+
+li {
+    box-sizing: border-box;
+    flex: 1;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+label {
+    transition: all 0.3s ease-in-out;
+    padding: 5px auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    white-space: nowrap;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#content {
+    position: relative;
+    text-align: center;
+}
+
+#title {
+    position: absolute;
+    width: 80vw;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    font-family: 'Bungee Shade', cursive;
+    font-size: 150px;
+    color: white;
+}
+
+#homeImage {
+    width: 100vw;
+    height: 80vh;
+    opacity: .5;
+}
+
+#homePara {
+    width: 80vw;
+    height: auto;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 50px;
+}
+
+.aboutContainer {
+    display: block;
+    flex-wrap: nowrap;
+    width: 90vw;
+    margin-left: 5vw;
+}
+
+#aboutTitle {
+    text-align: left;
+    /* margin-left: 60px;
+    margin-top: 80px; */
+    font-family: 'Monoton', cursive;
+}
+
+#aboutPara {
+    width: 40vw;
+    flex: 1;
+    justify-content: left;
+    /* margin-left: 45px; */
+    font-size: 45px;
+    text-align: left;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    line-height: 2;
+}
+
+#aboutImage {
+    height: 80vh;
+    width: auto;
+    flex: 1;
+    justify-content: right;
+    float: right;
+    /* margin-top: 20px;
+    margin-right: 60px; */
+}
+
+.menuGrid {
+    display: flex;
+}
+
+#figure1,
+#figure2,
+#figure3 {
+    margin-top: 15%;
+    width: 400px;
+    height: 400px;
+    flex: 1;
+    text-align: center;
+}
+
+#breakfastImage,
+#lunchImage,
+#drinkImage {
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    opacity: .5;
+}
+
+#breakfastImage:hover,
+#lunchImage:hover,
+#drinkImage:hover {
+    opacity: 1;
+}
+
+#figcap1,
+#figcap2,
+#figcap3 {
+    font-size: 35px;
+    padding: 10px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-align: center;
+}
+
+#contactTitle {
+    text-align: left;
+    margin-top: 70px;
+    margin-left: 60px;
+}
+
+#contactPara {
+    font-size: 20px;
+    text-align: left;
+    white-space: pre-line;
+    line-height: 2.5;
+    margin-left: 55px;
+}
+
+#breakfastTitle {
+    margin-top: 40px;
+    margin-left: 40px;
+    text-decoration: underline;
+    text-align: left;
+}
+
+#sidesTitle {
+    margin-top: 40px;
+    margin-left: 40px;
+    text-decoration: underline;
+    text-align: left;
+}
+
+#breakfastPara {
+    width: 500px;
+    font-size: 25px;
+    text-align: left;
+    margin-left: 45px;
+    white-space: pre-line;
+    line-height: 2.5;
+}
+
+#breakfastSides {
+    width: 500px;
+    font-size: 25px;
+    text-align: left;
+    margin-left: 45px;
+    white-space: pre-line;
+    line-height: 2.5;
+}
