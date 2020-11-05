@@ -11,7 +11,7 @@ ul {
     padding-left: 0;
     display: flex;
     flex-direction: row;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     justify-content: space-between;
     align-items: flex-end;
     flex-wrap: wrap;
@@ -21,38 +21,39 @@ ul {
 }
 
 li:hover {
-    border: 3px dotted red;
-    color: red;
-    background: rgb(0, 0, 0);
+    color: blue;
+    background: rgb(24, 22, 22);
 }
 
 li {
     box-sizing: border-box;
     flex: 1;
-    padding: 5px 10px;
+    padding: 15px 5px;
     text-align: center;
-}
-
-label {
-    transition: all 0.3s ease-in-out;
-    padding: 5px auto;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: block;
-    cursor: pointer;
     transition: all 0.2s ease-in-out;
-    white-space: nowrap;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
+    vertical-align: middle;
 }
 
 #content {
     position: relative;
     text-align: center;
+}
+
+.homePage {
+    width: 99vw;
+    height: 80vh;
+}
+
+.homePage::before {
+    content: "";
+    background-size: cover;
+    background-image: url(/assets/diner.jpg);
+    opacity: 0.7;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
 }
 
 #title {
@@ -68,7 +69,7 @@ a {
 }
 
 #homeImage {
-    width: 100vw;
+    width: 99vw;
     height: 80vh;
     opacity: .5;
 }
@@ -103,7 +104,7 @@ a {
     flex: 1;
     justify-content: left;
     /* margin-left: 45px; */
-    font-size: 45px;
+    font-size: 43px;
     text-align: left;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     line-height: 2;
@@ -164,11 +165,12 @@ a {
 }
 
 #contactPara {
-    font-size: 20px;
+    font-size: 30px;
     text-align: left;
     white-space: pre-line;
     line-height: 2.5;
     margin-left: 55px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 #breakfastTitle {
@@ -192,6 +194,7 @@ a {
     margin-left: 45px;
     white-space: pre-line;
     line-height: 2.5;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 #breakfastSides {
@@ -201,4 +204,129 @@ a {
     margin-left: 45px;
     white-space: pre-line;
     line-height: 2.5;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+#lunchTitle {
+    margin-top: 40px;
+    margin-left: 40px;
+    text-decoration: underline;
+    text-align: left;
+}
+
+#lunchPara {
+    width: 500px;
+    font-size: 25px;
+    text-align: left;
+    margin-left: 45px;
+    white-space: pre-line;
+    line-height: 2.5;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+#lunchSidesTitle {
+    margin-top: 40px;
+    margin-left: 40px;
+    text-decoration: underline;
+    text-align: left;
+}
+
+#lunchSides {
+    width: 500px;
+    font-size: 25px;
+    text-align: left;
+    margin-left: 45px;
+    white-space: pre-line;
+    line-height: 2.5;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+#drinkTitle {
+    margin-top: 40px;
+    margin-left: 40px;
+    text-decoration: underline;
+    text-align: left;
+}
+
+#drinkPara {
+    width: 500px;
+    font-size: 25px;
+    text-align: left;
+    margin-left: 45px;
+    white-space: pre-line;
+    line-height: 2.5;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+#smoothieTitle {
+    margin-top: 40px;
+    margin-left: 40px;
+    text-decoration: underline;
+    text-align: left;
+}
+
+#smoothiePara {
+    width: 500px;
+    font-size: 25px;
+    text-align: left;
+    margin-left: 45px;
+    white-space: pre-line;
+    line-height: 2.5;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+@media screen and (max-width: 1000px) {
+    #title {
+        font-size: 100px;
+    }
+    #homePara {
+        font-size: 35px;
+    }
+    #homeImage {
+        width: 120vw;
+    }
+    #aboutPara {
+        width: 40vw;
+        font-size: 30px;
+        flex-wrap: wrap;
+    }
+    #aboutImage {
+        width: 40vw;
+        height: auto;
+    }
+    #figure1,
+    #figure2,
+    #figure3 {
+        width: 200px;
+        height: 200px;
+    }
+    #breakfastImage,
+    #lunchImage,
+    #drinkImage {
+        width: 200px;
+        height: 200px;
+    }
+    #breakfastTitle,
+    #sidesTitle,
+    #breakfastPara,
+    #breakfastSides,
+    #lunchTitle,
+    #lunchPara,
+    #lunchSidesTitle,
+    #lunchSides,
+    #drinkTitle,
+    #drinkPara,
+    #smoothieTitle,
+    #smoothiePara {
+        text-align: center;
+        justify-content: center;
+    }
+    #breakfastPara,
+    #breakfastSides,
+    #lunchPara,
+    #lunchSides,
+    #drinkPara,
+    #smoothiePara {
+        padding-left: 160px;
+    }
 }

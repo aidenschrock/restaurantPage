@@ -6,28 +6,34 @@ import { contactBuild } from './contact'
 
 buildPage()
 
+document.getElementById("home").addEventListener("click", tabHome);
 document.getElementById("about").addEventListener("click", tabAbout);
 document.getElementById("menu").addEventListener("click", tabMenu);
 document.getElementById("contact").addEventListener("click", tabContact);
 
+function tabHome() {
+    const content = document.getElementById("content")
+    content.setAttribute("class", "")
+    content.innerHTML = "";
+    buildPage()
+}
 
 function tabAbout() {
-    console.log('about click')
     const content = document.getElementById("content")
     content.innerHTML = "";
     aboutBuild()
 }
 
 function tabMenu() {
-    console.log('menu click')
     const content = document.getElementById("content")
+    content.setAttribute("class", "")
     content.innerHTML = "";
     menuBuild()
 }
 
 function tabContact() {
-    console.log('contact click')
     const content = document.getElementById("content")
+    content.setAttribute("class", "")
     content.innerHTML = "";
     contactBuild()
 }
