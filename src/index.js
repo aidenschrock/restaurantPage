@@ -1,8 +1,9 @@
-import { buildPage } from './pageElements'
-import { aboutBuild } from './about'
-import { menuBuild } from './menu'
-import { contactBuild } from './contact'
+import { buildPage } from './pages/pageElements'
+import { aboutBuild } from './pages/about'
+import { menuBuild } from './pages/menu'
+import { contactBuild } from './pages/contact'
 
+import './css/main.css'
 
 buildPage()
 
