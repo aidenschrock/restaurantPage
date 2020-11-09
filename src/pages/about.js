@@ -1,3 +1,5 @@
+import aboutImage from '../assets/aboutimage.jpg'
+
 function aboutBuild() {
     let content = document.getElementById("content")
     content.setAttribute("class", "aboutContainer")
@@ -6,7 +8,7 @@ function aboutBuild() {
     // title.setAttribute("id", "aboutTitle")
     let image = document.createElement('img');
     image.setAttribute("id", "aboutImage");
-    image.src = "/assets/aboutimage.jpg"
+    image.src = aboutImage
     let para = document.createElement('p');
     para.setAttribute("id", "aboutPara")
     para.textContent = "The idea for Divine Diner was formed by Jan Brooks in 2006. She spent many twilight hours at\

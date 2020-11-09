@@ -2,6 +2,10 @@ import { breakfastBuild } from './breakfast'
 import { lunchBuild } from './lunch'
 import { drinksBuild } from './drinks'
 
+import bananaOatWafflesImage from '../assets/BananaOatWaffles.jpg'
+import burgerImage from '../assets/burger.jpg'
+import smoothieImage from '../assets/smoothie.jpg'
+
 function menuBuild() {
     let content = document.getElementById("content")
     content.setAttribute("class", "menuGrid")
@@ -10,7 +14,7 @@ function menuBuild() {
     figure1.setAttribute("id", "figure1");
     let image1 = document.createElement('img');
     image1.setAttribute("id", "breakfastImage");
-    image1.src = "/assets/BananaOatWaffles.jpg";
+    image1.src = bananaOatWafflesImage;
     let figcap1 = document.createElement('figcaption');
     figcap1.setAttribute("id", "figcap1");
     figcap1.textContent = "Breakfast";
@@ -21,7 +25,7 @@ function menuBuild() {
     figure2.setAttribute("id", "figure2");
     let image2 = document.createElement('img');
     image2.setAttribute("id", "lunchImage");
-    image2.src = "/assets/burger.jpg";
+    image2.src = burgerImage;
     let figcap2 = document.createElement('figcaption');
     figcap2.setAttribute("id", "figcap2");
     figcap2.textContent = "Lunch/Dinner";
@@ -32,7 +36,7 @@ function menuBuild() {
     figure3.setAttribute("id", "figure3");
     let image3 = document.createElement('img');
     image3.setAttribute("id", "drinkImage");
-    image3.src = "/assets/smoothie.jpg";
+    image3.src = smoothieImage;
     let figcap3 = document.createElement('figcaption');
     figcap3.setAttribute("id", "figcap3");
     figcap3.textContent = "Drinks";
